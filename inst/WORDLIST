@@ -1,8 +1,11 @@
 Anthro
 AnthroPlus
-AppVeyor
+Appveyor
 BAZ
 BMI
+CMD
+CodeFactor
+Codecov
 DHS
 DPS
 Dadaab
@@ -17,6 +20,7 @@ HelpAge
 Hense
 Kuulasmaa
 LCL
+Lifecycle
 MADs
 MUAC
 NCHS
@@ -42,8 +46,10 @@ agro
 baz
 bp
 bpqa
+cd
 cex
-codecov
+ci
+cran
 csv
 demispan
 df
@@ -60,7 +66,6 @@ ht
 htm
 kgs
 kwashiorkor
-lifecycle
 mads
 minGI
 monica
@@ -87,7 +92,3 @@ xquartz
 years’
 zt
 β
-Anthropometric
-anthropometric
-anthropometry
-
