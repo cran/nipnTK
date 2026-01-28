@@ -3,26 +3,32 @@
 
 # nipnTK: National Information Platforms for Nutrition (NiPN) Data Quality Toolkit <img src="man/figures/logo.png" width="200px" align="right" display="none" />
 
-<!-- Badges start here -->
+<!-- badges: start -->
 
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![CRAN](https://img.shields.io/cran/v/nipnTK.svg)](https://cran.r-project.org/package=nipnTK)
+<a href="https://CRAN.R-project.org/package=oldr"
+class="pkgdown-release"><img
+src="https://www.r-pkg.org/badges/version/oldr" alt="CRAN status" /></a>
 [![cran
 checks](https://badges.cranchecks.info/worst/nipnTK.svg)](https://cran.r-project.org/web/checks/check_results_nipnTK.html)
 [![CRAN](https://img.shields.io/cran/l/nipnTK.svg)](https://CRAN.R-project.org/package=nipnTK)
 [![CRAN](http://cranlogs.r-pkg.org/badges/nipnTK)](https://cran.r-project.org/package=nipnTK)
 [![CRAN](http://cranlogs.r-pkg.org/badges/grand-total/nipnTK)](https://cran.r-project.org/package=nipnTK)
-[![R-CMD-check](https://github.com/nutriverse/nipnTK/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nutriverse/nipnTK/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check.yaml](https://github.com/nutriverse/nipnTK/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nutriverse/nipnTK/actions/workflows/R-CMD-check.yaml)
 [![test-coverage](https://github.com/nutriverse/nipnTK/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/nutriverse/nipnTK/actions/workflows/test-coverage.yaml)
-[![Codecov test
-coverage](https://codecov.io/gh/nutriverse/nipnTK/branch/main/graph/badge.svg)](https://app.codecov.io/gh/nutriverse/nipnTK?branch=main)
+[![codecov](https://codecov.io/gh/nutriverse/nipnTK/branch/main/graph/badge.svg?token=XJIhRjAL5l)](https://app.codecov.io/gh/nutriverse/nipnTK/tree/main)
 [![CodeFactor](https://www.codefactor.io/repository/github/nutriverse/nipntk/badge)](https://www.codefactor.io/repository/github/nutriverse/nipntk)
-[![DOI](https://zenodo.org/badge/118171028.svg)](https://zenodo.org/badge/latestdoi/118171028)
-<!-- Badges end here -->
+<a href="https://zenodo.org/badge/latestdoi/118171028"
+class="pkgdown-release"><img
+src="https://zenodo.org/badge/118171028.svg" alt="DOI" /></a>
+<a href="https://doi.org/10.32614/CRAN.package.nipnTK"
+class="pkgdown-release"><img
+src="https://img.shields.io/badge/DOI-10.32614/CRAN.package.nipnTK-blue"
+alt="DOI" /></a> <!-- badges: end -->
 
 [National Information Platforms for Nutrition
 (NiPN)](https://www.nipn-nutrition-platforms.org) is an initiative of
@@ -48,19 +54,38 @@ variables.
 
 ## Installation
 
-You can install `nipnTK` from [CRAN](https://cran.r-project.org):
+<div class="pkgdown-release">
+
+You can install `{nipnTK}` from [CRAN](https://cran.r-project.org):
 
 ``` r
 install.packages("nipnTK")
 ```
 
-You can install the development version of `nipnTK` from
-[GitHub](https://github.com/nutriverse/nipnTK) with:
+</div>
+
+<div class="pkgdown-devel">
+
+You can install the development version of `{nipnTK}` from
+[GitHub](https://github.com/nutriverse/nipnTK) using the `{pak}` package
+with:
 
 ``` r
-if(!require(remotes)) install.packages("remotes")
-remotes::install_github("nutriverse/nipnTK")
+if(!require(pak)) install.packages("pak")
+pak::pak("nutriverse/nipnTK")
 ```
+
+You can also install `{nipnTK}` from the [nutriverse R
+Universe](https://nutriverse.r-universe.dev) with:
+
+``` r
+install.packages(
+  "nipnTK",
+  repos = c("https://nutriverse.r-universe.dev", "https://cloud.r-project.org")
+)
+```
+
+</div>
 
 ## Usage
 
@@ -94,29 +119,30 @@ Data quality is assessed by:
 These activities and a proposed order in which they should be performed
 are shown below:
 
-<img src="man/figures/nipnWorkflow.png" width="918" />
+<img src="man/figures/nipnWorkflow.png" alt="" width="918" />
 
 ## Citation
 
-If you find the `nipnTK` package useful, please cite using the suggested
-citation provided by a call to the `citation` function as follows:
+If you use the `{nipnTK}` package in your work, please cite using the
+suggested citation provided by a call to the `citation` function as
+follows:
 
 ``` r
 citation("nipnTK")
 #> To cite nipnTK in publications use:
 #> 
-#>   Mark Myatt, Ernest Guevarra (2024). _nipnTK: National Information
+#>   Mark Myatt, Ernest Guevarra (2026). _nipnTK: National Information
 #>   Platforms for Nutrition (NiPN) Data Quality Toolkit_.
 #>   doi:10.5281/zenodo.4297897 <https://doi.org/10.5281/zenodo.4297897>,
-#>   R package version 0.2.0, <https://nutriverse.io/nipnTK/>.
+#>   R package version 0.2.1, <https://nutriverse.io/nipnTK/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
 #>     title = {nipnTK: National Information Platforms for Nutrition (NiPN) Data Quality Toolkit},
 #>     author = {{Mark Myatt} and {Ernest Guevarra}},
-#>     year = {2024},
-#>     note = {R package version 0.2.0},
+#>     year = {2026},
+#>     note = {R package version 0.2.1},
 #>     url = {https://nutriverse.io/nipnTK/},
 #>     doi = {10.5281/zenodo.4297897},
 #>   }
@@ -132,3 +158,10 @@ guidelines](https://nutriverse.io/nipnTK/CONTRIBUTING.html).
 This project is released with a [Contributor Code of
 Conduct](https://nutriverse.io/nipnTK/CODE_OF_CONDUCT.html). By
 participating in this project you agree to abide by its terms.
+
+ 
+
+[![This is part of the nutriverse project under the Oxford iHealth
+initiative of the MSc in International Health and Tropical Medicine,
+Nuffield Department of Medicine, University of
+Oxford](https://github.com/nutriverse/nutriverse-images/blob/main/nutriverse/nutriverse_footer.png?raw=true)](https://nutriverse.io)

@@ -1,12 +1,14 @@
+# nipnTK 0.2.2
+
+This is a patch release of `nipnTK`. This release is for general updates and routine maintenance upkeep.
+
 # nipnTK 0.2.0
 
 ## Bug fixes
 
-* Resolved issue with `ageRatioTest()` not working properly when age has
-missing values
+* Resolved issue with `ageRatioTest()` not working properly when age has missing values
 
-* Resolved issue with `ageRatioTest()` not providing appropriate results when
-age values are numeric
+* Resolved issue with `ageRatioTest()` not providing appropriate results when age values are numeric
 
 ## General updates
 
@@ -22,11 +24,9 @@ release:
 
 ## Bug fixes
 
-* Resolved issue with `ageRatioTest()` not working properly when age has
-missing values
+* Resolved issue with `ageRatioTest()` not working properly when age has missing values
 
-* Resolved issue with `ageRatioTest()` not providing appropriate results when
-age values are numeric
+* Resolved issue with `ageRatioTest()` not providing appropriate results when age values are numeric
 
 ## General updates
 
